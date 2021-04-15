@@ -1,0 +1,188 @@
+*, 
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Margin */
+$margin-sm: 1rem;
+
+/* Colors */
+$color-blue: #567B95;
+$color-gray: #e2e2e2;
+
+// General
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1, 
+h3, 
+p {
+  margin-bottom: $margin-sm;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.header {
+  padding: 1.5rem;
+}
+
+img {
+  width: 100%;
+}
+
+svg {
+  width: 20px;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  border: none;
+}
+
+.btn-sub {
+  margin-right: $margin-sm;
+}
+
+.btn-sub,
+.btn-login {
+  background-color: $color-blue;
+  color: #fff;
+  border-radius: .3rem;
+  padding: .75rem;
+  text-transform: uppercase;
+}
+
+.btn-comments {
+  background-color: $color-blue;
+  color: #fff;
+  padding: 1rem;
+  flex: 0 1 60%;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+/* Navigation */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__items {
+    display: flex;
+    list-style-type: none;
+  }
+
+  &__logo-container {
+    margin-right: $margin-sm;
+
+    span {
+      display: block;
+      margin: 4px 0;
+      border-bottom: 2px solid #000;
+      width: 20px;
+    }
+  }
+
+  &__search-container {
+    margin-right: $margin-sm;
+  }
+
+  &__link {
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  svg {
+    width: 200px;
+  }
+}
+
+/* Main Content */
+.main-content {
+  margin-bottom: 4rem;
+
+  &__title {
+    font-size: 2rem;
+    border-bottom: 1px solid rgba(0, 0, 0, .3);
+    padding-bottom: 1rem;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: #666666;
+  }
+
+  &__subtitle {
+    font-size: 1.4rem;
+  } 
+
+  &__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    
+  }
+  
+}
+
+.icon-container {
+  &:nth-last-child(2) {
+    margin: 0;
+  }
+
+  i {
+    margin-right: $margin-sm;
+    background-color: #eeeeee;
+    border-radius: 50%;
+    padding: .5rem;
+  }
+}
+
+figure {
+  max-width: 1000px;
+  margin: 0 auto;
+
+  img {
+    margin-top: 2rem;
+  }
+}
+
+figcaption {
+  margin: $margin-sm 0;
+
+  .fig-author {
+    color: #888888;
+  }
+}
+
+small {
+  display: inline-block;
+  margin-bottom: 2rem;
+  color: #666666;
+
+  .main-content__link {
+    text-decoration: underline;
+  }
+}
+
+/* Footer */ 
+.footer {
+  border-top: 2px solid $color-gray;
+  border-bottom: 1px solid $color-gray;
+  padding: 2rem;
+
+  svg {
+    width: 200px;
+  }
+}

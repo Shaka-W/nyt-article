@@ -1,0 +1,178 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Margin */
+/* Colors */
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1,
+h3,
+p {
+  margin-bottom: 1rem;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.header {
+  padding: 1.5rem;
+}
+
+img {
+  width: 100%;
+}
+
+svg {
+  width: 20px;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  border: none;
+}
+
+.btn-sub {
+  margin-right: 1rem;
+}
+
+.btn-sub,
+.btn-login {
+  background-color: #567B95;
+  color: #fff;
+  border-radius: .3rem;
+  padding: .75rem;
+  text-transform: uppercase;
+}
+
+.btn-comments {
+  background-color: #567B95;
+  color: #fff;
+  padding: 1rem;
+  flex: 0 1 60%;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+/* Navigation */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar__items {
+  display: flex;
+  list-style-type: none;
+}
+
+.navbar__logo-container {
+  margin-right: 1rem;
+}
+
+.navbar__logo-container span {
+  display: block;
+  margin: 4px 0;
+  border-bottom: 2px solid #000;
+  width: 20px;
+}
+
+.navbar__search-container {
+  margin-right: 1rem;
+}
+
+.navbar__link {
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.navbar svg {
+  width: 200px;
+}
+
+/* Main Content */
+.main-content {
+  margin-bottom: 4rem;
+}
+
+.main-content__title {
+  font-size: 2rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  padding-bottom: 1rem;
+}
+
+.main-content__link {
+  text-decoration: none;
+  color: #666666;
+}
+
+.main-content__subtitle {
+  font-size: 1.4rem;
+}
+
+.main-content__bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.icon-container:nth-last-child(2) {
+  margin: 0;
+}
+
+.icon-container i {
+  margin-right: 1rem;
+  background-color: #eeeeee;
+  border-radius: 50%;
+  padding: .5rem;
+}
+
+figure {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+figure img {
+  margin-top: 2rem;
+}
+
+figcaption {
+  margin: 1rem 0;
+}
+
+figcaption .fig-author {
+  color: #888888;
+}
+
+small {
+  display: inline-block;
+  margin-bottom: 2rem;
+  color: #666666;
+}
+
+small .main-content__link {
+  text-decoration: underline;
+}
+
+/* Footer */
+.footer {
+  border-top: 2px solid #e2e2e2;
+  border-bottom: 1px solid #e2e2e2;
+  padding: 2rem;
+}
+
+.footer svg {
+  width: 200px;
+}
+/*# sourceMappingURL=style.css.map */
