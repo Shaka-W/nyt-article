@@ -8,6 +8,7 @@
 
 /* Margin */
 /* Colors */
+/* General */
 body {
   font-family: 'Open Sans', sans-serif;
 }
@@ -169,10 +170,53 @@ small .main-content__link {
 .footer {
   border-top: 2px solid #e2e2e2;
   border-bottom: 1px solid #e2e2e2;
+  margin: 0 2rem;
   padding: 2rem;
 }
 
-.footer svg {
+.footer__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__header .footer__link:last-child {
+  color: #567B95;
+}
+
+.footer .nyt-logo {
   width: 200px;
+}
+
+.footer svg {
+  width: 30px;
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.footer__items {
+  list-style-type: none;
+}
+
+.footer__items:last-child {
+  border-left: 1px solid #e2e2e2;
+  padding-left: 1rem;
+}
+
+.footer__item-title {
+  font-size: .9rem;
+}
+
+.footer__item {
+  margin-bottom: .5rem;
+}
+
+.footer__link {
+  text-decoration: none;
+  color: #000;
 }
 /*# sourceMappingURL=style.css.map */

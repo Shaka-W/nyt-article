@@ -7,13 +7,13 @@
 }
 
 /* Margin */
-$margin-sm: 1rem;
+$margin-base: 1rem;
 
 /* Colors */
 $color-blue: #567B95;
 $color-gray: #e2e2e2;
 
-// General
+/* General */
 body {
   font-family: 'Open Sans', sans-serif;
 }
@@ -21,7 +21,7 @@ body {
 h1, 
 h3, 
 p {
-  margin-bottom: $margin-sm;
+  margin-bottom: $margin-base;
 }
 
 .container {
@@ -48,7 +48,7 @@ svg {
 }
 
 .btn-sub {
-  margin-right: $margin-sm;
+  margin-right: $margin-base;
 }
 
 .btn-sub,
@@ -81,7 +81,7 @@ svg {
   }
 
   &__logo-container {
-    margin-right: $margin-sm;
+    margin-right: $margin-base;
 
     span {
       display: block;
@@ -92,7 +92,7 @@ svg {
   }
 
   &__search-container {
-    margin-right: $margin-sm;
+    margin-right: $margin-base;
   }
 
   &__link {
@@ -130,10 +130,7 @@ svg {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
-    
   }
-  
 }
 
 .icon-container {
@@ -142,7 +139,7 @@ svg {
   }
 
   i {
-    margin-right: $margin-sm;
+    margin-right: $margin-base;
     background-color: #eeeeee;
     border-radius: 50%;
     padding: .5rem;
@@ -159,7 +156,7 @@ figure {
 }
 
 figcaption {
-  margin: $margin-sm 0;
+  margin: $margin-base 0;
 
   .fig-author {
     color: #888888;
@@ -180,9 +177,52 @@ small {
 .footer {
   border-top: 2px solid $color-gray;
   border-bottom: 1px solid $color-gray;
+  margin: 0 2rem;
   padding: 2rem;
 
-  svg {
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .footer__link:last-child {
+      color: $color-blue;
+    }
+  }
+
+  .nyt-logo {
     width: 200px;
+  }
+
+  svg {
+    width: 30px;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+  }
+
+  &__items {
+    list-style-type: none;
+
+    &:last-child {
+      border-left: 1px solid rgb(226, 226, 226);
+      padding-left: 1rem;
+    }
+  }
+
+  &__item-title {
+    font-size: .9rem;
+  }
+
+  &__item {
+    margin-bottom: .5rem;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: #000;
   }
 }
